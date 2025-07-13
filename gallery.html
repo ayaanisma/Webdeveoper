@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .product-card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .product-card:hover {
+      transform: scale(1.03);
+    }
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .product-info {
+      padding: 15px;
+    }
+    .product-info h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+    .product-info p {
+      font-size: 14px;
+      color: #555;
+    }
+    .add-to-cart {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .add-to-cart:hover {
+      background-color: #219150;
+    }
+  </style>
+</head>
+<body>
+        <nav class="navbar">
+        <ul>
+    <li>  <a href="index.html">Home</a> &nbsp;</li>
+     <li> <a href="about us.html">about us</a>&nbsp;</li>
+     <li> <a href="login.html">login</a>&nbsp;</li>
+     <li><a href="gallery.html">gallery</a></li>
+        </ul>
+    </nav>
+
+  <header>
+    <h1>Our Products</h1>
+    <p>Check out our latest collection</p>
+  </header>
+
+  <section class="gallery-container">
+
+    <!-- Product 1 -->
+    <div class="product-card">
+      <img src="img4.jpg" alt="Product 1">
+      <div class="product-info">
+        <h3>almond oil </h3>
+        <p>Saliidan waxa ay ka sameysanthy loos dabiici ah kaasow timaha kuu siinaya dhirir iyo dhalaal qurux bdn.</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+      <img src="img3.jpg" alt="Product 2">
+      <div class="product-info">
+        <h3>daawo dhireed</h3>
+        <p>waxaa isticmalna daawo dhireed aad utayo bdn lagana keenay dalka india daawadan waxy uwangsnthy dadka qaba madax xanunka.</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <img src="img1.jpg" alt="Product 3">
+      <div class="product-info">
+        <h3>saliida omela</h3>
+        <p>Salidan waxa loogu talo galay dadka qaba agoolka ,timo qaleelka scalp ayee waxey ka dhigeysa mid caafimad qabo oo qoyan dabiici ah leh.</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Ku dar wax kale hadba inta aad leedahay -->
+
+  </section>
+
+</body>
+</html>
